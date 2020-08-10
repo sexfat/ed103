@@ -63,12 +63,28 @@ TweenMax.fromTo('.fromto', 3, {
 
 
 //選單
-function menu(){
-    TweenMax.staggerTo('.menu li' , 1 , {
+function menu() {
+    TweenMax.staggerTo('.menu li', 1, {
         x: 200
     }, .3) //
 }
+var tl = new TimelineMax({
+   repeat : 1,
+   yoyo: true,
+   repeatDelay : 1
+});
+
+// TweenMax.to('.tl1' , 1 , {x: 300})
+// TweenMax.to('.tl2' , 1 , {y: 100})
+// TweenMax.to('.tl3' , 1 , {x: 100 , y :400})
 
 
-
-
+tl.to('.tl1', .5, {
+    x: 300,
+    // repeat: 1
+}).to('.tl2', .5, {
+    y: 100
+}).to('.tl3', .5, {
+    x: 100,
+    y: 400
+})
