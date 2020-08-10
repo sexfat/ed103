@@ -137,3 +137,24 @@ var scense01 = new ScrollMagic.Scene({
     duration : 300 //距離
 
 }).setTween(tlscroll).addIndicators().addTo(controller);
+
+
+
+//第二個場景
+
+var textmove = TweenMax.to('.text' , 1 , {x: 300 , color: '#fff'})
+
+
+var scense02 = new ScrollMagic.Scene({
+    triggerElement: '#trigger02',
+    triggerHook: 0.5,
+    // reverse : true, // 動畫返回 true/不返回false
+    // offset : 0,  // 改變start觸發點
+    // duration : 300 //距離
+
+}).setTween(textmove).setClassToggle('.section_02' , 'on').addIndicators().addTo(controller);
+
+
+
+
+
