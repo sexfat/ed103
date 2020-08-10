@@ -53,3 +53,22 @@ section {
     top : 100px;
     left: 300px;
 }
+
+ul {
+  list-style: none; 
+  margin: 0 ;
+  padding: 0; 
+  position: relative;
+  left: -200px;
+}
+
+ul > li {
+    width: 200px;
+    height: 30px;
+    background-color: rgb(247, 34, 34);
+    border-bottom:1px solid #333;
+}
+
+button {
+    cursor: pointer;
+}
