@@ -125,7 +125,9 @@ var scroll01 =  TweenMax.to('.scoll01' , 1 , {x :300})
 
 // 3step
 var scense01 =  new ScrollMagic.Scene({
-    triggerElement : '#trigger01'
+    triggerElement : '#trigger01',
+    triggerHook: 0.3
+
 }).setTween(scroll01).addIndicators().addTo(controller);
 
 
