@@ -26,8 +26,21 @@ TweenMax.from('.from' , 10 , {
 
 TweenMax.to('.circle' , .8 , {
    rotation: 360,
-   repeat: -1, //連續
+   repeat: 1, //連續
    ease : Power0.easeNone //旋轉等速度
+});
+
+TweenMax.to('.scale' , 4 , {
+    //縮放
+      scale: 10,
+      rotation: 360, 
+      ease:Elastic.easeOut,
+      opacity : 1
+    // scaleX: 3
+    // scaleY: 3
 })
+
+
+
 
 

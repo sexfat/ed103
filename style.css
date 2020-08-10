@@ -31,8 +31,19 @@ section {
     background-color: rgb(0, 132, 255);
 }
 
+.lightblue {
+    background-color: rgb(136, 195, 250);
+}
+
 .circle {
    width: 200px;
    height: 200px;
    border-radius: 100px;
+}
+
+.scale {
+    position: relative;
+    top : 100px;
+    left: 400px;
+    opacity: 0;
 }
