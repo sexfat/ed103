@@ -47,3 +47,9 @@ section {
     left: 400px;
     opacity: 0;
 }
+
+.rotation {
+    position: relative;
+    top : 100px;
+    left: 300px;
+}

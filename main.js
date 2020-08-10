@@ -4,10 +4,12 @@ TweenMax.to('.box_00', 2, {
     //屬性
     x: 400,
     y: 300,
-    ease:Elastic.easeOut, //補間動畫
+    // ease:Elastic.easeOut, //補間動畫
     // width : '200px',
     // height : '200px',
-    repeat : 2,
+    repeat : 1,
+    yoyo: true
+
     //repeatDelay: 1
 });
 
@@ -30,14 +32,26 @@ TweenMax.to('.circle' , .8 , {
    ease : Power0.easeNone //旋轉等速度
 });
 
+
+//縮放
 TweenMax.to('.scale' , 4 , {
     //縮放
       scale: 10,
-      rotation: 360, 
-      ease:Elastic.easeOut,
-      opacity : 1
+      rotation: 360, // 旋轉
+      ease:Elastic.easeOut, //補間動畫
+      opacity : 1,
+      repeat: 1,
+      yoyo : true //收回
     // scaleX: 3
     // scaleY: 3
+});
+
+
+TweenMax.to('.rotation' , 2 , {
+    rotationX: 360,
+    transformOrigin : '10 bottom 150', // bottom center top right left
+    transformPerspective: 1200,
+    scale: 2
 })
 
 
