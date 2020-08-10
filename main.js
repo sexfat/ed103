@@ -68,16 +68,31 @@ function menu() {
         x: 200
     }, .3) //
 }
+
+// TimelineMax 時間軸動畫
+
+
+
+//按鈕物件
+var playbtn = document.getElementById('play');
+var pausebtn = document.getElementById('pause');
+var reversebtn = document.getElementById('reverse');
+
+//動畫
 var tl = new TimelineMax({
    repeat : 1,
    yoyo: true,
-   repeatDelay : 1
+   repeatDelay : 1,
+//    onComplete : wram  //callback function
 });
+// callback function
+function wram() {
+    alert('完成');
+}
 
 // TweenMax.to('.tl1' , 1 , {x: 300})
 // TweenMax.to('.tl2' , 1 , {y: 100})
 // TweenMax.to('.tl3' , 1 , {x: 100 , y :400})
-
 
 tl.to('.tl1', .5, {
     x: 300,
@@ -87,4 +102,20 @@ tl.to('.tl1', .5, {
 }).to('.tl3', .5, {
     x: 100,
     y: 400
-})
+});
+
+
+// 執行函式
+playbtn.onclick = function () {
+    tl.play();
+}
+pausebtn.onclick = function () {
+    tl.pause();
+}
+reversebtn.onclick = function () {
+    tl.reverse();
+}
+
+
+
+
