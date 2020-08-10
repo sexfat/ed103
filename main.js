@@ -130,6 +130,9 @@ tlscroll.to('.scoll01', 1, {x: 300}).to('.scoll01' , 1 , {y: 60}).to('.scoll01' 
 // 3step
 var scense01 = new ScrollMagic.Scene({
     triggerElement: '#trigger01',
-    triggerHook: 0.3
+    triggerHook: 0.3,
+    reverse : true, // 動畫返回 true/不返回false
+    offset : 0,  // 改變start觸發點
+    duration : 400 //距離
 
 }).setTween(tlscroll).addIndicators().addTo(controller);
