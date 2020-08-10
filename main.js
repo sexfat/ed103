@@ -116,6 +116,16 @@ reversebtn.onclick = function () {
     tl.reverse();
 }
 
+// scroll magic 基本設定
+// 1 step
+var controller = new ScrollMagic.Controller();
 
+// 2step
+var scroll01 =  TweenMax.to('.scoll01' , 1 , {x :300})
+
+// 3step
+var scense01 =  new ScrollMagic.Scene({
+    triggerElement : '#trigger01'
+}).setTween(scroll01).addIndicators().addTo(controller);
 
 
