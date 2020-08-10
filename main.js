@@ -22,6 +22,12 @@ TweenMax.from('.from' , 10 , {
    repeat : 2,
    ease:Elastic.easeOut //補間動畫
 
+});
+
+TweenMax.to('.circle' , .8 , {
+   rotation: 360,
+   repeat: -1, //連續
+   ease : Power0.easeNone //旋轉等速度
 })
 
 
