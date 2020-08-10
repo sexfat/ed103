@@ -122,17 +122,18 @@ var controller = new ScrollMagic.Controller();
 
 // 2step1
 var tlscroll =  new TimelineMax();
-tlscroll.to('.scoll01', 1, {x: 300}).to('.scoll01' , 1 , {y: 60}).to('.scoll01' ,1 , {
-    x:500,
-    rotation : 360
+tlscroll.to('.scoll01', 1, {x: 300}).to('.scoll01' , 1 , {y: 60}).to('.scoll01' ,4 , {
+    rotationX: 360,
+    transformOrigin: '10 bottom 150', // bottom center top right left
+    transformPerspective: 1200,
 })
 
 // 3step
 var scense01 = new ScrollMagic.Scene({
     triggerElement: '#trigger01',
-    triggerHook: 0.3,
+    triggerHook: 0.5,
     reverse : true, // 動畫返回 true/不返回false
     offset : 0,  // 改變start觸發點
-    duration : 400 //距離
+    duration : 300 //距離
 
 }).setTween(tlscroll).addIndicators().addTo(controller);
