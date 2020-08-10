@@ -80,10 +80,10 @@ var reversebtn = document.getElementById('reverse');
 
 //動畫
 var tl = new TimelineMax({
-   repeat : 1,
-   yoyo: true,
-   repeatDelay : 1,
-//    onComplete : wram  //callback function
+    repeat: 1,
+    yoyo: true,
+    repeatDelay: 1,
+    //    onComplete : wram  //callback function
 });
 // callback function
 function wram() {
@@ -120,14 +120,16 @@ reversebtn.onclick = function () {
 // 1 step
 var controller = new ScrollMagic.Controller();
 
-// 2step
-var scroll01 =  TweenMax.to('.scoll01' , 1 , {x :300})
+// 2step1
+var tlscroll =  new TimelineMax();
+tlscroll.to('.scoll01', 1, {x: 300}).to('.scoll01' , 1 , {y: 60}).to('.scoll01' ,1 , {
+    x:500,
+    rotation : 360
+})
 
 // 3step
-var scense01 =  new ScrollMagic.Scene({
-    triggerElement : '#trigger01',
+var scense01 = new ScrollMagic.Scene({
+    triggerElement: '#trigger01',
     triggerHook: 0.3
 
-}).setTween(scroll01).addIndicators().addTo(controller);
-
-
+}).setTween(tlscroll).addIndicators().addTo(controller);
