@@ -154,6 +154,23 @@ var scense02 = new ScrollMagic.Scene({
 
 }).setTween(textmove).setClassToggle('.section_02' , 'on').addIndicators().addTo(controller);
 
+//第三個場景
+
+var tlpin = new TimelineMax();
+
+tlpin.add(TweenMax.to('.pinbox01' , 1 , {x: 300}))
+tlpin.add(TweenMax.to('.pinbox02' , 1 , {y: 100 , x: 300}))
+tlpin.add(TweenMax.to('.pinbox03' , 1 , {x: 370}))
+tlpin.add(TweenMax.to('.pinbox04' , 1 , {x: 600}))
+
+
+
+var scenePin = new ScrollMagic.Scene({
+     triggerElement :'#trigger03',
+     triggerHook: 0,
+     duration: '400%'
+}).setPin('#scene03').setTween(tlpin).addIndicators().addTo(controller);
+
 
 
 
