@@ -183,7 +183,7 @@ var scenePin = new ScrollMagic.Scene({
 var fullpage = new TimelineMax();
 
 
-fullpage.fromTo('.bg01' , 1 , {y: '-100%'},{y: '0%'}).fromTo('.bg02' , 1 , {x: '-100%'},{x: '0%'}).fromTo('.bg03' , 1 , {y: '-100%'},{y: '0%'});
+fullpage.fromTo('.bg01' , 1 , {y: '-100%'},{y: '0%'}).fromTo('.bg02' , 1 , {x: '-100%'},{x: '0%'}).fromTo('.bg03' , 1 , {y: '100%' , x: '100%'},{y: '0%' , x: '0%'});
 
 
 var fullpin = new ScrollMagic.Scene({
