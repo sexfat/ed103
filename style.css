@@ -93,5 +93,23 @@ h3 {
 
 .section_02.on {
     background-color: rgb(0, 250, 104);
+}
+/* 第四個場景 */
 
+.scrollbg .bg {
+    width: 100vw;
+    height: 100vh;
+    position: absolute
+}
+
+.bg01 {
+    background-color: rgb(255, 238, 2);
+}
+
+.bg02 {
+    background-color: rgb(2, 255, 107);
+}
+
+.bg03 {
+    background-color: rgb(228, 48, 252);
 }

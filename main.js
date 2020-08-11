@@ -158,20 +158,37 @@ var scense02 = new ScrollMagic.Scene({
 
 var tlpin = new TimelineMax();
 
-tlpin.add(TweenMax.to('.pinbox01' , 1 , {x: 300}))
-tlpin.add(TweenMax.to('.pinbox02' , 1 , {y: 100 , x: 300}))
-tlpin.add(TweenMax.to('.pinbox03' , 1 , {x: 370}))
-tlpin.add(TweenMax.to('.pinbox04' , 1 , {x: 600}))
+// tlpin.add(TweenMax.to('.pinbox01' , 1 , {x: 300}))
+// tlpin.add(TweenMax.to('.pinbox02' , 1 , {y: 100 , x: 300}))
+// tlpin.add(TweenMax.to('.pinbox03' , 1 , {x: 370}))
+// tlpin.add(TweenMax.to('.pinbox04' , 1 , {x: 600}))
 
 
+tlpin.to('.pinbox01' , 1 , {x: 300}).to('.pinbox02' , 1 , {y: 100 , x: 300}).to('.pinbox03' , 1 , {x: 370}).to('.pinbox04' , 1 , {x: 600});
+
+
+
+// setPin  定住物件
 
 var scenePin = new ScrollMagic.Scene({
      triggerElement :'#trigger03',
      triggerHook: 0,
-     duration: '400%'
+     duration: '400%' // 四個物件動畫
 }).setPin('#scene03').setTween(tlpin).addIndicators().addTo(controller);
 
 
+//動畫
 
 
+var fullpage = new TimelineMax();
+
+
+fullpage.fromTo('.bg01' , 1 , {y: '-100%'},{y: '0%'}).fromTo('.bg02' , 1 , {x: '-100%'},{x: '0%'}).fromTo('.bg03' , 1 , {y: '-100%'},{y: '0%'});
+
+
+var fullpin = new ScrollMagic.Scene({
+    triggerElement: '#trigger04',
+    duration: '300%',
+    triggerHook: 0,
+}).setPin('.scrollbg').setTween(fullpage).addIndicators().addTo(controller);
 
