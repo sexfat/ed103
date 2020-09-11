@@ -1,7 +1,11 @@
 @charset "UTF-8";
+.aboutus {
+  width: 1920px;
+}
+
 /**** === CSS 註解  === ****/
 body {
-  padding: 20px;
+  padding: 10px;
   max-width: 1000px;
   color: #f20;
   margin: 10px 20px 10px 25px;
