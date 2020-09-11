@@ -1,0 +1,14 @@
+//不帶參數
+@mixin rect(){
+   width:  100px;
+   height:  40px;
+   background-color: #fff;
+}
+
+
+//呼叫 rect function
+.rect {
+  @include rect();
+}
+
+

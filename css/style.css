@@ -3,6 +3,12 @@
   width: 1920px;
 }
 
+.rect {
+  width: 100px;
+  height: 40px;
+  background-color: #fff;
+}
+
 /**** === CSS 註解  === ****/
 body {
   padding: 10px;

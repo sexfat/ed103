@@ -1,6 +1,7 @@
 //輸入
 @import "var";
 @import "aboutus";
+@import "sassMixin";
 
 /**** === CSS 註解  === ****/
 
@@ -21,7 +22,9 @@ body {
         margin: 0;
         padding: 0;
     }
-};
+}
+
+;
 
 .wrapper {
     h1 {
@@ -33,13 +36,16 @@ body {
     }
 
     .banner {
+
         //a
         h1 {
             font-size: 32px;
             color: yellow;
         }
     }
+
     .spec01 {
+
         //b 
         h1 {
             color: black;
