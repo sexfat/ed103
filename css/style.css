@@ -8,4 +8,31 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   background-color: #0485ff;
 }
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5 {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper h1 {
+  font-size: 150px;
+}
+
+.wrapper .text {
+  font-size: 30px;
+}
+
+.wrapper .banner h1 {
+  font-size: 32px;
+  color: yellow;
+}
+
+.wrapper .spec01 h1 {
+  color: black;
+  font-size: 18px;
+}
 /*# sourceMappingURL=style.css.map */
