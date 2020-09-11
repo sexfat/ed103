@@ -45,6 +45,12 @@
   background-color: #6aff00;
 }
 
+.container {
+  width: 1920px;
+  position: relative;
+  text-align: center;
+}
+
 /**** === CSS 註解  === ****/
 body {
   padding: 10px;

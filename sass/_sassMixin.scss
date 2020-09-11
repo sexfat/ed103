@@ -31,6 +31,7 @@
 
 
 
+
 //呼叫 rect function
 .rect {
     @include rect();
@@ -39,33 +40,42 @@
 }
 
 //btn 組件
-@mixin btn($w ,$padding , $bgcolor , $color) {
+@mixin btn($w, $padding, $bgcolor, $color) {
     width: $w;
-    padding : $padding;
+    padding: $padding;
     border: 2px solid $bgcolor;
     text-align: center;
-    background-color: inherit ;
+    background-color: inherit;
     color: $color;
     cursor: pointer;
     margin-bottom: 20px;
     border-radius: 8px;
     transition: .2s all ease-in-out;
+
     //偽元素寫法
     &:hover {
-      background-color: $bgcolor;  
+        background-color: $bgcolor;
     }
-    
-}
 
+}
 
 .btn {
-   @include btn(150px , 10px , #9500ff , #fff)
+    @include btn(150px, 10px, #9500ff, #fff)
 }
-
 
 .btn-wide {
-    @include btn(250px , 10px , #6aff00 , #fff)
+    @include btn(250px, 10px, #6aff00, #fff)
+}
+
+//預設值 跟 null
+@mixin wrapper($w:100% , $center:null) {
+    width: $w;
+    position: relative;
+    text-align: $center;
 }
 
 
 
+.container {
+    @include wrapper(1920px, center)
+}
