@@ -8,6 +8,29 @@
   height: 40px;
   background-color: #fff;
   margin: 20px auto;
+  padding: 20px;
+}
+
+.btn {
+  width: 150px;
+  padding: 10px;
+  border: 1px solid #9500ff;
+  text-align: center;
+  background-color: #9500ff;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.btn-wide {
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #6aff00;
+  text-align: center;
+  background-color: #6aff00;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
 
 /**** === CSS 註解  === ****/

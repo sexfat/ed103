@@ -17,23 +17,48 @@
 
 
 //不帶參數
-@mixin rect(){
-   width:  100px;
-   height:  40px;
-   background-color: #fff;
+@mixin rect() {
+    width: 100px;
+    height: 40px;
+    background-color: #fff;
 }
 
 //帶參數
-@mixin margin-auto($num){
+@mixin margin-auto($num, $padding) {
     margin: $num auto;
-  }
+    padding: $padding;
+}
 
 
 
 //呼叫 rect function
 .rect {
-  @include rect();
-  @include margin-auto(20px);
+    @include rect();
+    @include margin-auto(20px, 20px);
+    //   @include margin-auto(20px, null); //可以給null值
 }
+
+//btn 組件
+@mixin btn($w ,$padding , $bgcolor , $color) {
+    width: $w;
+    padding : $padding;
+    border: 1px solid $bgcolor;
+    text-align: center;
+    background-color: $bgcolor;
+    color: $color;
+    cursor: pointer;
+    margin-bottom: 20px;
+    
+}
+
+
+.btn {
+   @include btn(150px , 10px , #9500ff , #fff)
+}
+
+.btn-wide {
+    @include btn(250px , 10px , #6aff00 , #fff)
+} 
+
 
 
