@@ -1,7 +1,21 @@
-$padding: 200px;
+$a: 20px; //數字
+$red: #f20; // 顏色
+$margin : 10px 20px 10px 25px; // list
+$font_family :  Helvetica, Arial, sans-serif;// 字串
+$null : null; // null
+$bg-color : (
+   'blue' : #0485ff,
+   'red' : #ff1100,
+   'yellow'  : #fffb00
+);  // map 
 
+/**** === CSS 註解  === ****/
 
 body {
-    padding: $padding;
+    padding: $a;
     max-width:  1000px;
+    color: $red;
+    margin : $margin;
+    font-family: $font_family;
+    background-color:map-get($bg-color, 'blue') ;
 }
