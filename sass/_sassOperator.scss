@@ -1,15 +1,72 @@
 .box {
- width:  10 + 20px;
- height: 40px - 10;
- max-width: 10px * 20; //單位要注意
- font: (100px/20); //單位 跟 ()
-//  background-color: #111 + #999;
+    width: 10 + 20px;
+    height: 40px - 10;
+    max-width: 10px * 20; //單位要注意
+    font: (100px/20); //單位 跟 ()
+    //  background-color: #111 + #999;
 }
 
 
 .operator01 {
-   width: floor(100px / 3); //無條件捨去
-   height: ceil(100px / 3); //無條件進位
-   margin: round(100px / 3); //四捨五入
+    width: floor(100px / 3); //無條件捨去
+    height: ceil(100px / 3); //無條件進位
+    margin: round(100px / 3); //四捨五入
 }
 
+
+h1 {
+    font-size: round($fontbase * 4.5);
+}
+
+h2 {
+    font-size: round($fontbase * 3.5);
+}
+
+h3 {
+    font-size: round($fontbase * 2.5);
+}
+
+h4 {
+    font-size: round($fontbase * 1.8);
+}
+
+h5 {
+    font-size: round($fontbase * 1);
+}
+
+//判斷式
+// $widths : 200;
+
+@mixin ifelse($widths) {
+    @if $widths <=100 {
+        .num {
+            width: $widths + px;
+        }
+    }
+
+    @else {
+        .num {
+            width: ($widths / 2) + px;
+        }
+    }
+}
+
+@include ifelse(90);
+
+
+ @mixin layout($width){
+    @if $width == 100 {
+        width: 100%;
+        display: block;
+    }@else {
+       width:$width + px; 
+       margin: 0 auto;
+    }
+ }
+
+.container {
+    @include layout(1200);
+} 
+.container-full {
+   @include layout(100);
+}
