@@ -1,3 +1,21 @@
+//  =====參考用  ===
+
+// //帶參數
+// @mixin margin-auto($num){
+//     margin: $num auto;
+//   }
+
+
+// //不帶參數
+// @mixin rect($num){
+//    width:  100px;
+//    height:  40px;
+//    background-color: #fff;
+//    @include margin-auto($num);
+// }
+
+
+
 //不帶參數
 @mixin rect(){
    width:  100px;
@@ -5,10 +23,17 @@
    background-color: #fff;
 }
 
+//帶參數
+@mixin margin-auto($num){
+    margin: $num auto;
+  }
+
+
 
 //呼叫 rect function
 .rect {
   @include rect();
+  @include margin-auto(20px);
 }
 
 
