@@ -51,6 +51,19 @@
   text-align: center;
 }
 
+.box {
+  width: 30px;
+  height: 30px;
+  max-width: 200px;
+  font: 5px;
+}
+
+.operator01 {
+  width: 33px;
+  height: 34px;
+  margin: 33px;
+}
+
 /**** === CSS 註解  === ****/
 body {
   padding: 10px;

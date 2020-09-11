@@ -1,0 +1,15 @@
+.box {
+ width:  10 + 20px;
+ height: 40px - 10;
+ max-width: 10px * 20; //單位要注意
+ font: (100px/20); //單位 跟 ()
+//  background-color: #111 + #999;
+}
+
+
+.operator01 {
+   width: floor(100px / 3); //無條件捨去
+   height: ceil(100px / 3); //無條件進位
+   margin: round(100px / 3); //四捨五入
+}
+
