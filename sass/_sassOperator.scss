@@ -65,7 +65,7 @@ h5 {
  }
 
 .container {
-    @include layout(1200);
+    @include layout(1366);
 } 
 .container-full {
    @include layout(100);

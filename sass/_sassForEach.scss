@@ -1,0 +1,20 @@
+@for $i from 1 through 9 {
+
+    //#{} 數值轉字串
+    .box-#{$i} {
+        width: $i * 1px;
+    }
+}
+//grids
+@mixin grids($num) {
+    @for $i from 1 through $num {
+        .col-md-#{$i} {
+            width: ($i / $num) * 100%;
+            margin: 0 10px;
+            background-color: #999;
+        }
+    }
+}
+
+
+@include grids(12);
