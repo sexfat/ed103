@@ -42,12 +42,18 @@
 @mixin btn($w ,$padding , $bgcolor , $color) {
     width: $w;
     padding : $padding;
-    border: 1px solid $bgcolor;
+    border: 2px solid $bgcolor;
     text-align: center;
-    background-color: $bgcolor;
+    background-color: inherit ;
     color: $color;
     cursor: pointer;
     margin-bottom: 20px;
+    border-radius: 8px;
+    transition: .2s all ease-in-out;
+    //偽元素寫法
+    &:hover {
+      background-color: $bgcolor;  
+    }
     
 }
 
@@ -56,9 +62,10 @@
    @include btn(150px , 10px , #9500ff , #fff)
 }
 
+
 .btn-wide {
     @include btn(250px , 10px , #6aff00 , #fff)
-} 
+}
 
 
 
