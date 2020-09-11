@@ -121,8 +121,12 @@ reversebtn.onclick = function () {
 var controller = new ScrollMagic.Controller();
 
 // 2step1
-var tlscroll =  new TimelineMax();
-tlscroll.to('.scoll01', 1, {x: 300}).to('.scoll01' , 1 , {y: 60}).to('.scoll01' ,4 , {
+var tlscroll = new TimelineMax();
+tlscroll.to('.scoll01', 1, {
+    x: 300
+}).to('.scoll01', 1, {
+    y: 60
+}).to('.scoll01', 4, {
     rotationX: 360,
     transformOrigin: '10 bottom 150', // bottom center top right left
     transformPerspective: 1200,
@@ -132,9 +136,9 @@ tlscroll.to('.scoll01', 1, {x: 300}).to('.scoll01' , 1 , {y: 60}).to('.scoll01' 
 var scense01 = new ScrollMagic.Scene({
     triggerElement: '#trigger01',
     triggerHook: 0.5,
-    reverse : true, // 動畫返回 true/不返回false
-    offset : 0,  // 改變start觸發點
-    duration : 300 //距離
+    reverse: true, // 動畫返回 true/不返回false
+    offset: 0, // 改變start觸發點
+    duration: 300 //距離
 
 }).setTween(tlscroll).addIndicators().addTo(controller);
 
@@ -142,7 +146,10 @@ var scense01 = new ScrollMagic.Scene({
 
 //第二個場景
 
-var textmove = TweenMax.to('.text' , 1 , {x: 300 , color: '#fff'})
+var textmove = TweenMax.to('.text', 1, {
+    x: 300,
+    color: '#fff'
+})
 
 
 var scense02 = new ScrollMagic.Scene({
@@ -152,7 +159,7 @@ var scense02 = new ScrollMagic.Scene({
     // offset : 0,  // 改變start觸發點
     // duration : 300 //距離
 
-}).setTween(textmove).setClassToggle('.section_02' , 'on').addIndicators().addTo(controller);
+}).setTween(textmove).setClassToggle('.section_02', 'on').addIndicators().addTo(controller);
 
 //第三個場景
 
@@ -164,16 +171,25 @@ var tlpin = new TimelineMax();
 // tlpin.add(TweenMax.to('.pinbox04' , 1 , {x: 600}))
 
 
-tlpin.to('.pinbox01' , 1 , {x: 300}).to('.pinbox02' , 1 , {y: 100 , x: 300}).to('.pinbox03' , 1 , {x: 370}).to('.pinbox04' , 1 , {x: 600});
+tlpin.to('.pinbox01', 1, {
+    x: 300
+}).to('.pinbox02', 1, {
+    y: 100,
+    x: 300
+}).to('.pinbox03', 1, {
+    x: 370
+}).to('.pinbox04', 1, {
+    x: 600
+});
 
 
 
 // setPin  定住物件
 
 var scenePin = new ScrollMagic.Scene({
-     triggerElement :'#trigger03',
-     triggerHook: 0,
-     duration: '400%' // 四個物件動畫
+    triggerElement: '#trigger03',
+    triggerHook: 0,
+    duration: '400%' // 四個物件動畫
 }).setPin('#scene03').setTween(tlpin).addIndicators().addTo(controller);
 
 
@@ -183,7 +199,23 @@ var scenePin = new ScrollMagic.Scene({
 var fullpage = new TimelineMax();
 
 
-fullpage.fromTo('.bg01' , 1 , {y: '-100%'},{y: '0%'}).fromTo('.bg02' , 1 , {x: '-100%'},{x: '0%'}).fromTo('.bg03' , 1 , {y: '100%' , x: '100%'},{y: '0%' , x: '0%'});
+fullpage.fromTo('.bg01', 1, {
+    y: '-100%',
+    scale: 1.5
+}, {
+    y: '0%',
+    scale: 1
+}).fromTo('.bg02', 1, {
+    x: '-100%'
+}, {
+    x: '0%'
+}).fromTo('.bg03', 1, {
+    y: '100%',
+    x: '100%'
+}, {
+    y: '0%',
+    x: '0%'
+});
 
 
 var fullpin = new ScrollMagic.Scene({
@@ -191,4 +223,3 @@ var fullpin = new ScrollMagic.Scene({
     duration: '300%',
     triggerHook: 0,
 }).setPin('.scrollbg').setTween(fullpage).addIndicators().addTo(controller);
-
