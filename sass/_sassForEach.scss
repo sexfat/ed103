@@ -129,10 +129,11 @@ $rwd : (
     @for $i from 1 through $num {
         .col-#{$breakpoint}-#{$i} {
             width: ($i / $num) * 100%;
+            display: inline-block;
+
         }
     }
 }
-
 
 
 @include rwd-each(desktop){
@@ -146,6 +147,9 @@ $rwd : (
 @include rwd-each(small){
     @include grid-box(sm, 12);
 }
+
+
+
 
 
 

@@ -1,0 +1,58 @@
+.marginAuto {
+   margin: 0 auto;
+}
+
+@mixin marginAuto() {
+    margin: 0 auto;
+}
+
+
+.box-auto {
+    width: 300px;
+    // @extend .marginAuto;
+    @include marginAuto();
+}
+.red {
+   background-color: red; 
+}
+
+.blue {
+   background-color:blue; 
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+%green {
+   background-color: green; 
+}
+
+
+
+
+.box-red {
+   width: 200px;
+   height: 30px;
+   @extend .red;
+}
+
+
+.box-blue {
+    width: 200px;
+    height: 30px;
+    @extend .blue;
+ }
+
+ .box-yellow {
+    width: 200px;
+    height: 30px;
+    @extend .yellow;
+ }
+
+ .box-green {
+    width: 200px;
+    height: 30px;
+    @extend %green;
+ }
+
