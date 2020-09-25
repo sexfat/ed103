@@ -134,78 +134,6 @@ h5 {
   width: 9px;
 }
 
-.col-md-1 {
-  width: 8.33333%;
-  margin: 0 10px;
-  background-color: #999;
-}
-
-.col-md-2 {
-  width: 16.66667%;
-  margin: 0 10px;
-  background-color: #999;
-}
-
-.col-md-3 {
-  width: 25%;
-  margin: 0 10px;
-  background-color: #999;
-}
-
-.col-md-4 {
-  width: 33.33333%;
-  margin: 0 10px;
-  background-color: #999;
-}
-
-.col-md-5 {
-  width: 41.66667%;
-  margin: 0 10px;
-  background-color: #999;
-}
-
-.col-md-6 {
-  width: 50%;
-  margin: 0 10px;
-  background-color: #999;
-}
-
-.col-md-7 {
-  width: 58.33333%;
-  margin: 0 10px;
-  background-color: #999;
-}
-
-.col-md-8 {
-  width: 66.66667%;
-  margin: 0 10px;
-  background-color: #999;
-}
-
-.col-md-9 {
-  width: 75%;
-  margin: 0 10px;
-  background-color: #999;
-}
-
-.col-md-10 {
-  width: 83.33333%;
-  margin: 0 10px;
-  background-color: #999;
-}
-
-.col-md-11 {
-  width: 91.66667%;
-  margin: 0 10px;
-  background-color: #999;
-}
-
-.col-md-12 {
-  width: 100%;
-  margin: 0 10px;
-  background-color: #999;
-}
-
 /*字體*/
 h1 {
   font-size: 40px;
@@ -373,5 +301,77 @@ body h5 {
   h1 {
     font-size: 30px;
   }
+}
+
+.col-md-1 {
+  width: 8.33333%;
+  margin: 0 10px;
+  background-color: #999;
+}
+
+.col-md-2 {
+  width: 16.66667%;
+  margin: 0 10px;
+  background-color: #999;
+}
+
+.col-md-3 {
+  width: 25%;
+  margin: 0 10px;
+  background-color: #999;
+}
+
+.col-md-4 {
+  width: 33.33333%;
+  margin: 0 10px;
+  background-color: #999;
+}
+
+.col-md-5 {
+  width: 41.66667%;
+  margin: 0 10px;
+  background-color: #999;
+}
+
+.col-md-6 {
+  width: 50%;
+  margin: 0 10px;
+  background-color: #999;
+}
+
+.col-md-7 {
+  width: 58.33333%;
+  margin: 0 10px;
+  background-color: #999;
+}
+
+.col-md-8 {
+  width: 66.66667%;
+  margin: 0 10px;
+  background-color: #999;
+}
+
+.col-md-9 {
+  width: 75%;
+  margin: 0 10px;
+  background-color: #999;
+}
+
+.col-md-10 {
+  width: 83.33333%;
+  margin: 0 10px;
+  background-color: #999;
+}
+
+.col-md-11 {
+  width: 91.66667%;
+  margin: 0 10px;
+  background-color: #999;
+}
+
+.col-md-12 {
+  width: 100%;
+  margin: 0 10px;
+  background-color: #999;
 }
 /*# sourceMappingURL=style.css.map */
