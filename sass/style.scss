@@ -57,4 +57,23 @@ body {
     }
 }
 
+@include rwd(desktop){
+    h1 {
+       font-size: 100px;
+    }
+  }
+  
+  @include rwd(medium){
+      h1 {
+         font-size: 60px;
+      }
+    }
+  
+  
+    @include rwd(small){
+        h1{
+            font-size : 30px
+        }
+    }
+
 

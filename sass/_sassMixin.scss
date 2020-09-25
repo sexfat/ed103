@@ -78,9 +78,7 @@
     @include wrapper(1920px, center)
 }
 
-$desktop : 1100px;
-$medium : 960px;
-$small: 767px;
+
 
 
 @mixin rwd($breakpoint) {
@@ -102,21 +100,3 @@ $small: 767px;
 }
 
 
-@include rwd(desktop){
-  h1 {
-     font-size: 100px;
-  }
-}
-
-@include rwd(medium){
-    h1 {
-       font-size: 60px;
-    }
-  }
-
-
-  @include rwd(small){
-      h1{
-          font-size : 30px
-      }
-  }
