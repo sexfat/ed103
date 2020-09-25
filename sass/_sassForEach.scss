@@ -7,13 +7,7 @@
 }
 
 //grids
-@mixin grids($num) {
-    @for $i from 1 through $num {
-        .col-md-#{$i} {
-            width: ($i / $num) * 100%;
-        }
-    }
-}
+
 
 
 //字體
@@ -47,29 +41,7 @@ $val in $tagSize {
 }
 
 
-// image (判斷 png/jpg)
-@mixin bg-images($file, $images) {
-    @if $file==png {
-        @each $img in $images {
-            .#{$img}_bg-image {
-                background-image: url('./images/#{$img}.png');
-                display: block;
-                width: 80%;
-            }
-        }
-    }
 
-    @else if $file==jpg {
-        @each $img in $images {
-            .#{$img}_bg {
-                background-image: url('./images/#{$img}.jpg');
-                display: block;
-                width: 80%;
-            }
-        }
-
-    }
-}
 
 //前綴
 @mixin css3($property, $value) {
@@ -125,14 +97,7 @@ $rwd : (
 // }
 
 //grids
-@mixin grid-box($breakpoint ,$num) {
-    @for $i from 1 through $num {
-        .col-#{$breakpoint}-#{$i} {
-            width: ($i / $num) * 100%;
-            display: inline-block;
-        }
-    }
-}
+
 
 
 @include rwd-each(desktop){

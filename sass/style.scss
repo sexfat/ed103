@@ -1,10 +1,32 @@
-//輸入
-@import "var";
-@import "aboutus";
-@import "sassMixin";
-@import "sassOperator";
-@import "sassForEach";
-@import "sassExtend";
+//base
+@import "base/var";
+@import "base/reset";
+@import "base/color";
+@import "base/font";
+//mixin
+@import "mixin/rwd";
+@import "mixin/grid";
+@import "mixin/img";
+
+//layout
+
+@import "layout/header";
+@import "layout/footer";
+@import "layout/login";
+@import "layout/cart";
+
+//page
+
+@import "page/main";
+@import "page/about";
+@import "page/contact";
+
+//套件
+// @import 'vender/'
+
+
+
+
 // @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
 /**** === CSS 註解  === ****/

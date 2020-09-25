@@ -1,0 +1,10 @@
+body {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    color: $color;
+    background-color: $bgColor;
+    letter-spacing: $letterSpace;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
