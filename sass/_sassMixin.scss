@@ -78,22 +78,24 @@
     @include wrapper(1920px, center)
 }
 
+$desktop : 1100px;
+$medium : 960px;
+$small: 767px;
+
 
 @mixin rwd($breakpoint) {
     @if $breakpoint=="desktop" {
-        @media all and (min-width: 996px) {
+        @media all and (min-width: $desktop) {
             @content;
         }
     }
-
     @else if $breakpoint=="medium" {
-        @media all and (min-width: 767px) {
+        @media all and (min-width: $medium ) {
             @content;
         }
     }
-
     @else if $breakpoint=="small" {
-        @media all and (max-width: 454px) {
+        @media all and (max-width: $small) {
             @content;
         }
     }
