@@ -155,6 +155,31 @@ h5 {
   font-size: 16px;
 }
 
+div {
+  transition: width 2s;
+  -o-transition: width 2s;
+  -webkit-transition: width 2s;
+  -moz-transition: width 2s;
+}
+
+@media all and (min-width: 1200px) {
+  .box {
+    content: 'desktop';
+  }
+}
+
+@media all and (min-width: 996px) {
+  .box {
+    content: 'medium';
+  }
+}
+
+@media all and (min-width: 767px) {
+  .box {
+    content: 'small';
+  }
+}
+
 /**** === CSS 註解  === ****/
 body {
   padding: 10px;
