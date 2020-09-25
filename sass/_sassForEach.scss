@@ -5,7 +5,6 @@
         width: $i * 1px;
     }
 }
-
 //grids
 @mixin grids($num) {
     @for $i from 1 through $num {
@@ -18,23 +17,9 @@
 }
 
 
-
-
-
-//each mixin 圖片
-
-
-
-
 //字體
 
 /*字體*/
-$tagSize : (h1 : 40px,
-    h2 : 35px,
-    h3 : 28px,
-    h4: 20px,
-    h5: 16px);
-
 @each $tag,
 $val in $tagSize {
 
@@ -45,7 +30,7 @@ $val in $tagSize {
 }
 
 
-
+//each mixin 圖片
 @mixin bg-image($images) {
     @each $img in $images {
         .#{$img}_bg {
@@ -62,18 +47,8 @@ $val in $tagSize {
     }
 }
 
-@include bg-image(aa bb cc dd ee);
 
-@include bg-image(person) {
-    border: 1px solid #eee;
-    color: lawngreen;
-}
-
-@include bg-image(pp) {
-    box-shadow: 10px 10px 1px lawngreen;
-}
-
-
+// image (判斷 png/jpg)
 @mixin bg-images($file, $images) {
     @if $file == png {
         @each $img in $images {
@@ -96,7 +71,5 @@ $val in $tagSize {
     }
 }
 
-@include bg-images(jpg, a1 a2 a3 a4);
-@include bg-images(png, b1 b2 b3 b4);
 
 

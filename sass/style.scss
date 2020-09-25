@@ -77,5 +77,21 @@ body {
     }
 
 
-
+//grid
 @include grids(12);
+
+
+// bg image
+@include bg-image(aa bb cc dd ee);
+@include bg-image(person) {
+    border: 1px solid #eee;
+    color: lawngreen;
+}
+@include bg-image(pp) {
+    box-shadow: 10px 10px 1px lawngreen;
+}
+
+// image (判斷 png/jpg)
+@include bg-images(jpg, a1 a2 a3 a4);
+@include bg-images(png, b1 b2 b3 b4);
+

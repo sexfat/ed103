@@ -155,99 +155,6 @@ h5 {
   font-size: 16px;
 }
 
-.aa_bg {
-  background-image: url("./images/aa.png");
-  display: block;
-  width: 80%;
-}
-
-.bb_bg {
-  background-image: url("./images/bb.png");
-  display: block;
-  width: 80%;
-}
-
-.cc_bg {
-  background-image: url("./images/cc.png");
-  display: block;
-  width: 80%;
-}
-
-.dd_bg {
-  background-image: url("./images/dd.png");
-  display: block;
-  width: 80%;
-}
-
-.ee_bg {
-  background-image: url("./images/ee.png");
-  display: block;
-  width: 80%;
-}
-
-.person_bg {
-  background-image: url("./images/person.png");
-  display: block;
-  width: 80%;
-  border: 1px solid #eee;
-  color: lawngreen;
-}
-
-.pp_bg {
-  background-image: url("./images/pp.png");
-  display: block;
-  width: 80%;
-  box-shadow: 10px 10px 1px lawngreen;
-}
-
-.a1_bg {
-  background-image: url("./images/a1.jpg");
-  display: block;
-  width: 80%;
-}
-
-.a2_bg {
-  background-image: url("./images/a2.jpg");
-  display: block;
-  width: 80%;
-}
-
-.a3_bg {
-  background-image: url("./images/a3.jpg");
-  display: block;
-  width: 80%;
-}
-
-.a4_bg {
-  background-image: url("./images/a4.jpg");
-  display: block;
-  width: 80%;
-}
-
-.b1_bg-image {
-  background-image: url("./images/b1.png");
-  display: block;
-  width: 80%;
-}
-
-.b2_bg-image {
-  background-image: url("./images/b2.png");
-  display: block;
-  width: 80%;
-}
-
-.b3_bg-image {
-  background-image: url("./images/b3.png");
-  display: block;
-  width: 80%;
-}
-
-.b4_bg-image {
-  background-image: url("./images/b4.png");
-  display: block;
-  width: 80%;
-}
-
 /**** === CSS 註解  === ****/
 body {
   padding: 10px;
@@ -373,5 +280,98 @@ body h5 {
   width: 100%;
   margin: 0 10px;
   background-color: #999;
+}
+
+.aa_bg {
+  background-image: url("./images/aa.png");
+  display: block;
+  width: 80%;
+}
+
+.bb_bg {
+  background-image: url("./images/bb.png");
+  display: block;
+  width: 80%;
+}
+
+.cc_bg {
+  background-image: url("./images/cc.png");
+  display: block;
+  width: 80%;
+}
+
+.dd_bg {
+  background-image: url("./images/dd.png");
+  display: block;
+  width: 80%;
+}
+
+.ee_bg {
+  background-image: url("./images/ee.png");
+  display: block;
+  width: 80%;
+}
+
+.person_bg {
+  background-image: url("./images/person.png");
+  display: block;
+  width: 80%;
+  border: 1px solid #eee;
+  color: lawngreen;
+}
+
+.pp_bg {
+  background-image: url("./images/pp.png");
+  display: block;
+  width: 80%;
+  box-shadow: 10px 10px 1px lawngreen;
+}
+
+.a1_bg {
+  background-image: url("./images/a1.jpg");
+  display: block;
+  width: 80%;
+}
+
+.a2_bg {
+  background-image: url("./images/a2.jpg");
+  display: block;
+  width: 80%;
+}
+
+.a3_bg {
+  background-image: url("./images/a3.jpg");
+  display: block;
+  width: 80%;
+}
+
+.a4_bg {
+  background-image: url("./images/a4.jpg");
+  display: block;
+  width: 80%;
+}
+
+.b1_bg-image {
+  background-image: url("./images/b1.png");
+  display: block;
+  width: 80%;
+}
+
+.b2_bg-image {
+  background-image: url("./images/b2.png");
+  display: block;
+  width: 80%;
+}
+
+.b3_bg-image {
+  background-image: url("./images/b3.png");
+  display: block;
+  width: 80%;
+}
+
+.b4_bg-image {
+  background-image: url("./images/b4.png");
+  display: block;
+  width: 80%;
 }
 /*# sourceMappingURL=style.css.map */
