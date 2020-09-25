@@ -18,5 +18,8 @@
   "homepage": "https://github.com/sexfat/ed103#readme",
   "dependencies": {
     "bootstrap-sass": "^3.4.1"
+  },
+  "devDependencies": {
+    "owl.carousel": "^2.3.4"
   }
 }
