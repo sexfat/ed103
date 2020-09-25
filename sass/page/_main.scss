@@ -1,3 +1,14 @@
-.wrapper-main{
- //code
+.wrapper-main {
+
+    //code
+    @include rwd(desktop) {
+        h1 {
+              font-size: 30px;
+        }
+    }
+    @include rwd(medium) {
+        h1 {
+              font-size: 80px;
+        }
+    }
 }
