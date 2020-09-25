@@ -68,7 +68,7 @@
 }
 
 //預設值 跟 null
-@mixin wrapper($w:100% , $center:null) {
+@mixin wrapper($w:100%, $center:null) {
     width: $w;
     position: relative;
     text-align: $center;
@@ -77,3 +77,44 @@
 .container {
     @include wrapper(1920px, center)
 }
+
+
+@mixin rwd($breakpoint) {
+    @if $breakpoint=="desktop" {
+        @media all and (min-width: 996px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint=="medium" {
+        @media all and (min-width: 767px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint=="small" {
+        @media all and (max-width: 454px) {
+            @content;
+        }
+    }
+}
+
+
+@include rwd(desktop){
+  h1 {
+     font-size: 100px;
+  }
+}
+
+@include rwd(medium){
+    h1 {
+       font-size: 60px;
+    }
+  }
+
+
+  @include rwd(small){
+      h1{
+          font-size : 30px
+      }
+  }
