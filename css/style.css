@@ -251,6 +251,27 @@ h5 {
   box-shadow: 10px 10px 1px lawngreen;
 }
 
+/*字體*/
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
 /**** === CSS 註解  === ****/
 body {
   padding: 10px;

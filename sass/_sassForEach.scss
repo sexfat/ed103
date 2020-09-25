@@ -21,7 +21,7 @@
 
 
 
-//each mixin
+//each mixin 圖片
 
 @mixin bg-image($images) {
     @each $img in $images {
@@ -30,10 +30,10 @@
             display: block;
             width: 80%;
             @content; //擴增屬性到內部
-            
+
             // &:hover {
-               
-               
+
+
             // }
         }
     }
@@ -48,4 +48,23 @@
 
 @include bg-image(pp){
     box-shadow:10px 10px 1px lawngreen;
+}
+
+
+//字體
+
+/*字體*/
+$tagSize : (
+   h1  : 40px,
+   h2 : 35px,
+   h3 : 28px, 
+   h4: 20px,
+   h5: 16px
+);
+
+@each $tag , $val in $tagSize {
+  //h1 h2 h3  
+    #{$tag} {
+       font-size: $val;
+    }
 }
