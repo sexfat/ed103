@@ -130,7 +130,6 @@ $rwd : (
         .col-#{$breakpoint}-#{$i} {
             width: ($i / $num) * 100%;
             display: inline-block;
-
         }
     }
 }
