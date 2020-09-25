@@ -11,8 +11,6 @@
     @for $i from 1 through $num {
         .col-md-#{$i} {
             width: ($i / $num) * 100%;
-            margin: 0 10px;
-            background-color: #999;
         }
     }
 }
@@ -93,12 +91,10 @@ div {
 
 
 
-
-
 $rwd : (
    desktop :1200px,
-   medium : 996px,
-   small : 767px
+   medium : 767px,
+   small : 450px
 ); //map
 
 
@@ -112,21 +108,55 @@ $rwd : (
     }
 }
 
-@include rwd-each(desktop){
-    .box {
-        content: 'desktop';
+// @include rwd-each(desktop){
+//     .box {
+//         content: 'desktop';
+//     }
+// }
+// @include rwd-each(medium){
+//     .box {
+//         content: 'medium';
+//     }
+// }
+// @include rwd-each(small){
+//     .box {
+//         content: 'small';
+//     }
+// }
+
+//grids
+@mixin grid-box($breakpoint ,$num) {
+    @for $i from 1 through $num {
+        .col-#{$breakpoint}-#{$i} {
+            width: ($i / $num) * 100%;
+        }
     }
 }
 
 
+
+@include rwd-each(desktop){
+    @include grid-box(lg, 12);
+}
+
 @include rwd-each(medium){
-    .box {
-        content: 'medium';
-    }
+    @include grid-box(md, 12);
 }
 
 @include rwd-each(small){
-    .box {
-        content: 'small';
-    }
+    @include grid-box(sm, 12);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
