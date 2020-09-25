@@ -5,6 +5,7 @@
         width: $i * 1px;
     }
 }
+
 //grids
 @mixin grids($num) {
     @for $i from 1 through $num {
@@ -16,5 +17,35 @@
     }
 }
 
-
 @include grids(12);
+
+
+
+//each mixin
+
+@mixin bg-image($images) {
+    @each $img in $images {
+        .#{$img}_bg {
+            background-image: url('./images/#{$img}.png');
+            display: block;
+            width: 80%;
+            @content; //擴增屬性到內部
+            
+            // &:hover {
+               
+               
+            // }
+        }
+    }
+}
+
+@include bg-image(aa bb cc dd ee);
+
+@include bg-image(person){
+    border:  1px solid #eee;
+    color: lawngreen;
+}
+
+@include bg-image(pp){
+    box-shadow:10px 10px 1px lawngreen;
+}
