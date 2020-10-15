@@ -6,3 +6,5 @@ body {
     font-size: 40px; }
   body span {
     font-size: 30px; }
+  body .title {
+    color: lawngreen; }
