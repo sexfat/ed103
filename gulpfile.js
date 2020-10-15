@@ -13,6 +13,7 @@ gulp.task('copy', function () {
 })
 
 //先執行 'sass copy' 任務 -> 在執行 'minicss'
+//先執行 sass -> concat -> mini
 gulp.task('minicss' ,['sass'] , function(){
   return gulp.src('css/*.css')
   .pipe(concat('all.css'))
@@ -26,11 +27,6 @@ gulp.task('sass' , function(){
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('css/'))
 })
-//監看變動
-gulp.task('watch' ,function(){
-    //路徑
-    gulp.watch('sass/*.scss' ,['minicss']);//執行function
-});
 
 //合併css
 gulp.task('concatCss',['sass'], function() {
@@ -38,6 +34,12 @@ gulp.task('concatCss',['sass'], function() {
       .pipe(concat('all.css'))
       .pipe(gulp.dest('./css/concat/'));
   });
+
+  //監看變動
+gulp.task('watch' ,function(){
+    //路徑
+    gulp.watch('sass/*.scss' ,['minicss']);//執行function
+});
 
 
 
