@@ -2,6 +2,8 @@ const gulp = require('gulp');
 const cleanCSS = require('gulp-clean-css');
 const sass = require('gulp-sass');
 const concat = require('gulp-concat');
+const fileinclude = require('gulp-file-include');
+
 
 gulp.task('hi', function () {
     //do something
@@ -34,6 +36,17 @@ gulp.task('concatCss',['sass'], function() {
       .pipe(concat('all.css'))
       .pipe(gulp.dest('./css/concat/'));
   });
+// html template
+  gulp.task('fileinclude', function() {
+    gulp.src(['./app/*.html'])
+      .pipe(fileinclude({
+        prefix: '@@',
+        basepath: '@file'
+      }))
+      .pipe(gulp.dest('./'));
+  });
+
+
 
   //監看變動
 gulp.task('watch' ,function(){
