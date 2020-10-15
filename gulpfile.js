@@ -3,6 +3,7 @@ const cleanCSS = require('gulp-clean-css');
 const sass = require('gulp-sass');
 const concat = require('gulp-concat');
 const fileinclude = require('gulp-file-include');
+const browserSync = require('browser-sync').create();
 
 
 gulp.task('hi', function () {
@@ -53,6 +54,19 @@ gulp.task('watch' ,function(){
     //路徑
     gulp.watch('sass/*.scss' ,['minicss']);//執行function
     gulp.watch(['app/*.html' , 'app/**/*.html' ] ,['fileinclude']);//執行function
+});
+
+
+var reload = browserSync.reload;
+
+//瀏覽器
+gulp.task('browser-sync', function() {
+  browserSync.init({
+      server: {
+          baseDir: "./",
+          index : "index.html"
+      }
+  });
 });
 
 
