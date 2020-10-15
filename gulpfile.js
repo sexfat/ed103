@@ -11,7 +11,7 @@ gulp.task('copy', function () {
     return gulp.src('index.html').pipe(gulp.dest('html'))
 })
 
-
+//先執行 'sass copy' 任務 -> 在執行 'minicss'
 gulp.task('minicss' ,['sass', 'copy'] , function(){
   return gulp.src('css/*.css')
   .pipe(cleanCSS({
@@ -24,5 +24,11 @@ gulp.task('sass' , function(){
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('css/'))
 })
+//監看變動
+gulp.task('watch' ,function(){
+    //路徑
+    gulp.watch('sass/*.scss' ,['sass']);//執行function
+})
+
 
 
