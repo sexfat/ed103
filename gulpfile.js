@@ -28,7 +28,7 @@ gulp.task('sass' , function(){
 //監看變動
 gulp.task('watch' ,function(){
     //路徑
-    gulp.watch('sass/*.scss' ,['sass']);//執行function
+    gulp.watch('sass/*.scss' ,['concatCss']);//執行function
 });
 
 //合併css
