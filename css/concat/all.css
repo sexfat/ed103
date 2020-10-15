@@ -13,3 +13,11 @@ body {
   padding: 0; }
   body h2 {
     font-size: 200px; }
+
+/*style3*/
+.wrapper h1 {
+  font-size: 36px;
+  letter-spacing: 1px; }
+
+.wrapper h2 {
+  font-size: 30px; }
