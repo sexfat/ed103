@@ -52,6 +52,7 @@ gulp.task('concatCss',['sass'], function() {
 gulp.task('watch' ,function(){
     //路徑
     gulp.watch('sass/*.scss' ,['minicss']);//執行function
+    gulp.watch(['app/*.html' , 'app/**/*.html' ] ,['fileinclude']);//執行function
 });
 
 
