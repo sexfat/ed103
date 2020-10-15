@@ -19,5 +19,8 @@
   "homepage": "https://github.com/sexfat/ed103#readme",
   "dependencies": {
     "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp-clean-css": "^4.3.0"
   }
 }
