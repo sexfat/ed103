@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const cleanCSS = require('gulp-clean-css');
 const sass = require('gulp-sass');
+const concat = require('gulp-concat');
 
 gulp.task('hi', function () {
     //do something
@@ -28,7 +29,14 @@ gulp.task('sass' , function(){
 gulp.task('watch' ,function(){
     //路徑
     gulp.watch('sass/*.scss' ,['sass']);//執行function
-})
+});
+
+//
+gulp.task('concatCss', function() {
+    return gulp.src('css/*.css')
+      .pipe(concat('all.css'))
+      .pipe(gulp.dest('./css/concat/'));
+  });
 
 
 
