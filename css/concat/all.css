@@ -6,3 +6,10 @@ body {
     font-size: 90px; }
   body span {
     font-size: 30px; }
+
+/*style2*/
+body {
+  margin: 0;
+  padding: 0; }
+  body h2 {
+    font-size: 200px; }

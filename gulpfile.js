@@ -21,7 +21,7 @@ gulp.task('minicss' ,['sass', 'copy'] , function(){
 });
 
 gulp.task('sass' , function(){
-    return gulp.src('sass/style1.scss')
+    return gulp.src('sass/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('css/'))
 })
@@ -31,8 +31,8 @@ gulp.task('watch' ,function(){
     gulp.watch('sass/*.scss' ,['sass']);//執行function
 });
 
-//
-gulp.task('concatCss', function() {
+//合併css
+gulp.task('concatCss',['sass'], function() {
     return gulp.src('css/*.css')
       .pipe(concat('all.css'))
       .pipe(gulp.dest('./css/concat/'));
