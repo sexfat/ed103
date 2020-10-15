@@ -1,10 +1,5 @@
 /*style1*/
 body {
   margin: 0;
-  padding: 0; }
-  body h1 {
-    font-size: 40px; }
-  body span {
-    font-size: 30px; }
-  body .title {
-    color: lawngreen; }
+  padding: 0;
+  background-color: #fa0202; }

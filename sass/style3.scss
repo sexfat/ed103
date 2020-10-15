@@ -1,13 +1,14 @@
 /*style3*/
+
+@mixin marginAuto(){
+  margin: 0 auto;  
+}
+
 .wrapper {
-    h1 {
-        font-size: 36px;
-        letter-spacing: 1px;
-    }
-    h2 {
-        font-size: 10000px;
-    }
-    span {
-        color:#32e417;
-    }
+   .content {
+       width: 1200px;
+       @include marginAuto();
+       background-color: rgb(151, 255, 5);
+       padding: 20px;
+   }
 }

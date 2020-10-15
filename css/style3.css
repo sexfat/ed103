@@ -1,10 +1,6 @@
 /*style3*/
-.wrapper h1 {
-  font-size: 36px;
-  letter-spacing: 1px; }
-
-.wrapper h2 {
-  font-size: 10000px; }
-
-.wrapper span {
-  color: #32e417; }
+.wrapper .content {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #97ff05;
+  padding: 20px; }

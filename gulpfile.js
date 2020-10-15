@@ -60,13 +60,15 @@ gulp.task('watch' ,function(){
 var reload = browserSync.reload;
 
 //瀏覽器
-gulp.task('browser-sync', function() {
+gulp.task('default', function() {
   browserSync.init({
       server: {
           baseDir: "./",
           index : "index.html"
       }
   });
+  gulp.watch('sass/*.scss' ,['minicss']).on('change' , reload);
+  gulp.watch(['app/*.html' , 'app/**/*.html' ] ,['fileinclude']).on('change' , reload);//執行
 });
 
 
