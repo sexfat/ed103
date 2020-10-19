@@ -107,7 +107,7 @@ gulp.task('babel', () =>
 gulp.task('clear', function () {
   return gulp.src('./css', {
       read: false, 
-      allowEmpty: false
+      allowEmpty: true
     })
     .pipe(clean());
 });
