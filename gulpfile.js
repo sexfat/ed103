@@ -61,24 +61,31 @@ gulp.task('watch' ,function(){
 var reload = browserSync.reload;
 
 //瀏覽器
-gulp.task('default', function() {
-  browserSync.init({
-      server: {
-          baseDir: "./",
-          index : "index.html"
-      }
-  });
-  gulp.watch('sass/*.scss' ,['minicss']).on('change' , reload);
-  gulp.watch(['app/*.html' , 'app/**/*.html' ] ,['fileinclude']).on('change' , reload);//執行
-});
+// gulp.task('default', function() {
+//   browserSync.init({
+//       server: {
+//           baseDir: "./",
+//           index : "index.html"
+//       }
+//   });
+//   gulp.watch('sass/*.scss' ,['minicss']).on('change' , reload);
+//   gulp.watch(['app/*.html' , 'app/**/*.html' ] ,['fileinclude']).on('change' , reload);//執行
+// });
 
 
 //壓縮圖片
-gulp.task('img', function () {
+// gulp.task('img', function () {
+//   gulp.src('./images/*')
+//     .pipe(imagemin())
+//     .pipe(gulp.dest('images/mini'))
+// })
+
+exports.img = () => (
   gulp.src('./images/*')
-    .pipe(imagemin())
-    .pipe(gulp.dest('images/mini'))
-})
+      .pipe(imagemin())
+      .pipe(gulp.dest('./images/mini'))
+);
+
 
 
 
