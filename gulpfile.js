@@ -5,6 +5,7 @@ const concat = require('gulp-concat');
 const fileinclude = require('gulp-file-include');
 const browserSync = require('browser-sync').create();
 const imagemin = require('gulp-imagemin');
+const clean = require('gulp-clean');
 
 
 gulp.task('hi', function () {
@@ -26,7 +27,7 @@ gulp.task('minicss' ,['sass'] , function(){
   })).pipe(gulp.dest('css/all'))
 });
 
-gulp.task('sass' , function(){
+gulp.task('sass',['clear'], function(){
     return gulp.src('sass/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('css/'))
@@ -98,4 +99,16 @@ gulp.task('babel', () =>
   .pipe(gulp.dest('js/es5'))
 );
 
+
+// 移除檔案
+
+
+
+gulp.task('clear', function () {
+  return gulp.src('./css', {
+      read: false, 
+      allowEmpty: false
+    })
+    .pipe(clean());
+});
 
