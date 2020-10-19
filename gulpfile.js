@@ -87,5 +87,15 @@ exports.img = () => (
 );
 
 
+const babel = require('gulp-babel');
+
+
+gulp.task('babel', () =>
+  gulp.src('js/app.js')
+  .pipe(babel({
+    presets: ['@babel/env']
+  }))
+  .pipe(gulp.dest('js/es5'))
+);
 
 
