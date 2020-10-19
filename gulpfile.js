@@ -17,7 +17,7 @@ gulp.task('copy', function () {
     return gulp.src('index.html').pipe(gulp.dest('html'))
 })
 
-//先執行 'sass copy' 任務 -> 在執行 'minicss'
+//先執行 清楚舊檔案'clear' -> 'sass copy' 任務 -> 在執行 'minicss'
 //先執行 sass -> concat -> mini
 gulp.task('minicss' ,['sass'] , function(){
   return gulp.src('css/*.css')
@@ -27,6 +27,7 @@ gulp.task('minicss' ,['sass'] , function(){
   })).pipe(gulp.dest('css/all'))
 });
 
+//先清除舊有檔案 再做編譯sass
 gulp.task('sass',['clear'], function(){
     return gulp.src('sass/*.scss')
     .pipe(sass().on('error', sass.logError))
@@ -101,9 +102,6 @@ gulp.task('babel', () =>
 
 
 // 移除檔案
-
-
-
 gulp.task('clear', function () {
   return gulp.src('./css', {
       read: false, 
