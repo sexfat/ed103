@@ -4,6 +4,7 @@ const sass = require('gulp-sass');
 const concat = require('gulp-concat');
 const fileinclude = require('gulp-file-include');
 const browserSync = require('browser-sync').create();
+const imagemin = require('gulp-imagemin');
 
 
 gulp.task('hi', function () {
@@ -70,6 +71,14 @@ gulp.task('default', function() {
   gulp.watch('sass/*.scss' ,['minicss']).on('change' , reload);
   gulp.watch(['app/*.html' , 'app/**/*.html' ] ,['fileinclude']).on('change' , reload);//執行
 });
+
+
+//壓縮圖片
+gulp.task('img', function () {
+  gulp.src('./images/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('images/mini'))
+})
 
 
 
