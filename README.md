@@ -36,3 +36,19 @@ webpack xxx.js -d //開發者模式
 webpack xxx.js -p //上線模式
 
 
+## 安裝jquery
+
+`npm i jquery`
+
+- index.js
+
+```js
+ import $ from "jquery"; //載入模組
+ console.log('webpack ok');
+```
+
+
+
+
+
+
