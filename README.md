@@ -143,7 +143,7 @@ module.exports = {
         rules: [{
             test: /\.css$/,
             use: [{
-                    loader: MiniCssExtractPlugin.loader,
+                    loader: MiniCssExtractPlugin.loader, //使用分離 loader
                     options: {
                         publicPath : './dist'
                     }
@@ -154,6 +154,7 @@ module.exports = {
             ]
         }]
     },
+    // plugins
     plugins: [
        new MiniCssExtractPlugin({
           filename : 'main.css' 
@@ -162,6 +163,14 @@ module.exports = {
 };
 
 ```
+
+
+# 使用sass-loader來撰寫scss
+https://www.webpackjs.com/loaders/sass-loader/
+
+`npm install sass-loader node-sass  --save-dev`
+
+
 
 
 
