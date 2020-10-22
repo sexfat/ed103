@@ -64,6 +64,12 @@ module.exports = {
 ```
 
 
+# 指令
+
+`webpack -w //監看`
+`webpack -d -w //監看開發者模式`
+
+
 
 
 
