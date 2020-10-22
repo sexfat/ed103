@@ -116,6 +116,14 @@ module.exports = {
   };
 ```
 
+#  讓 webpack 分離css
+
+https://webpack.js.org/plugins/mini-css-extract-plugin/
+
+#### 使用 mini-css-extract-plugin
+
+`npm install --save-dev mini-css-extract-plugin`
+
 
 
 
