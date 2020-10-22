@@ -64,12 +64,25 @@ module.exports = {
 ```
 
 
-# 指令
+# 配置文件指令
 
 `webpack -w //監看`
 `webpack -d -w //監看開發者模式`
 
 
+
+```js
+module.exports = {
+    entry: {
+        app : './src/index.js',
+        app2 : './src/index2.js' 
+    }, //兩個進入點
+    output : {
+       path : path.resolve(__dirname , 'dist'), //產出資料夾
+       filename : '[name].bundle.js' //產出檔案名稱 去抓進入點 key 值名稱
+    }
+  };
+```
 
 
 
