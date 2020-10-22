@@ -1,9 +1,2 @@
-body {
-    background-color: rgb(6, 255, 27);
-}
+body{background-color:#06ff1b}body .box{width:150px;height:120px;background-color:#7e0101;position:relative;top:100px}
 
-.box {
-    width: 100px;
-    height: 120px;
-    background-color: #7e0101;
-}

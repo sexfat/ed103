@@ -13,22 +13,25 @@ module.exports = {
     },
     module: {
         rules: [{
-            test: /\.css$/,
+            test: /\.(sass|scss|css)$/,
             use: [{
                     loader: MiniCssExtractPlugin.loader,
                     options: {
                         publicPath : './dist'
                     }
-                }, //順序二
+                }, //順序三
                 {
                     loader: "css-loader"
-                } // 順序一
+                },//順序二
+                {
+                    loader : "sass-loader"
+                } //順序一
             ]
         }]
     },
     plugins: [
        new MiniCssExtractPlugin({
-          filename : 'style.css' 
+          filename : '[name].css' 
        }) 
     ]
 };

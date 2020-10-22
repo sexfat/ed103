@@ -1,6 +1,9 @@
 import $ from "jquery";
 import TweenMax from "gsap"; 
-import "./style.css"
+import './style.scss';
+import './style2.scss';
+// import "./style.css"
+
 
 $('.box').css('color','black');
 console.log('webpack ok');
