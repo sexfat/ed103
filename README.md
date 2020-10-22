@@ -47,6 +47,28 @@ webpack xxx.js -p //上線模式
  console.log('webpack ok');
 ```
 
+## 配置文件
+
+- webpack.config.js
+
+```js
+const path = require('path');
+
+module.exports = {
+    entry: './src/index.js', //進入點
+    output : {
+       path : path.resolve(__dirname , 'dist'), //產出資料夾
+       filename : 'bundle.js' //產出檔案名稱
+    }
+  };
+```
+
+
+
+
+
+
+
 
 
 
