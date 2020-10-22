@@ -1,7 +1,8 @@
 # 安裝方式
 
 全域安裝
-`npm i webpack webpack-cli -g`
+`npm i webpack@4.43.0 -g`
+`npm i webpack-cli@3.3.12 -g`
 
 1. 要裝在 c 槽
 2. 安裝4.43.0 版本  npm i webpack@4.43.0 -g
