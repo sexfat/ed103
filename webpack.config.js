@@ -2,12 +2,12 @@ const path = require('path');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 
 module.exports = {
     entry: {
-        app:  './src/index.js',
-        app2: './src/index2.js'
+        app:  './src/index.js'
     }, //兩個進入點
     output: {
         path: path.resolve(__dirname, 'dist'), //產出資料夾
@@ -44,6 +44,7 @@ module.exports = {
        new webpack.ProvidePlugin({
         $: 'jquery',
         jQuery: 'jquery'
-      }) //全域加載jq
+      }), //全域加載jq
+      new CleanWebpackPlugin()//清除建構檔案
     ]
 };
