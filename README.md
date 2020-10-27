@@ -191,6 +191,13 @@ new webpack.ProvidePlugin({
 })
 ```
 
+# 清除建構檔案
+
+https://www.npmjs.com/package/clean-webpack-plugin
+
+
+
+
 
 
 
