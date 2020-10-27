@@ -55,5 +55,11 @@ module.exports = {
         jQuery: 'jquery'
       }), //全域加載jq
       new CleanWebpackPlugin()//清除建構檔案
-    ]
+    ],
+    //解決vue 的runtime 的問題
+    resolve: {
+        alias: {
+           vue: 'vue/dist/vue.js'
+        }
+      }
 };

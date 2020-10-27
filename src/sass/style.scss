@@ -8,7 +8,12 @@ body {
         height: 120px;
         background-color: $bgc;
         position: relative;
-        top: 100px
+        top: 10px
+    }
+    #app {
+        margin-top: 20px;
+        font-size: 30px;
+        
     }
 }
 

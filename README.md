@@ -215,6 +215,28 @@ https://webpack.js.org/configuration/dev-server/
 ```
 
 
+# vue 整合進去webpack
+
+- 安裝vue  `npm i vue --save-dev`
+
+
+
+- 1. 在 webpack.config.js 加入以下 
+
+- 2. 如果要加入jquery 要在全域下加入jquery 才不會干擾。
+
+- 3. 解決vue runtime 問題
+https://stackoverflow.com/questions/47332728/you-are-using-the-runtime-only-build-of-vue-where-the-template-compiler-is-not-a?rq=1
+
+```jsx=
+ resolve: {
+        alias: {
+           vue: 'vue/dist/vue.js'
+        }
+      }
+```
+
+
 
 
 
