@@ -1,5 +1,5 @@
 import TweenMax from "gsap"; //gsap套件引入
-import './style.scss';
+import './sass/style.scss';
 
 
 TweenMax.to('.box' , 1 , {
