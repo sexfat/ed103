@@ -44,6 +44,6 @@ module.exports = {
        new webpack.ProvidePlugin({
         $: 'jquery',
         jQuery: 'jquery'
-      }) 
+      }) //全域加載jq
     ]
 };
