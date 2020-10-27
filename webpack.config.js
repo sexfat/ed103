@@ -6,6 +6,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 
 module.exports = {
+    mode: 'development',//production
     entry: {
         app:  './src/index.js'
     }, //兩個進入點
@@ -15,11 +16,11 @@ module.exports = {
     },
     // server
     devServer: {
-        contentBase: path.join(__dirname, 'dist'),
-        index : 'index.html',
-        host : 'localhost', 
+        contentBase: path.join(__dirname, 'dist'),//資料夾
+        index : 'index.html',//首頁檔案
+        host : 'localhost', //host
         //compress: true,
-        port: 9000
+        port: 9000//port
       },
     module: {
         rules: [{
