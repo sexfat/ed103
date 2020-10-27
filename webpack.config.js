@@ -13,6 +13,14 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'), //產出資料夾
         filename: '[name].bundle.js' //產出檔案名稱
     },
+    // server
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        index : 'index.html',
+        host : 'localhost', 
+        //compress: true,
+        port: 9000
+      },
     module: {
         rules: [{
             test: /\.(sass|scss|css)$/,

@@ -196,6 +196,15 @@ new webpack.ProvidePlugin({
 https://www.npmjs.com/package/clean-webpack-plugin
 
 
+# dev server
+https://webpack.js.org/configuration/dev-server/
+
+ -  安裝 `npm i webpack-dev-server --save-dev`
+
+
+指令 ： webpack-dev-server --open
+
+
 
 
 
