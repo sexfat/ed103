@@ -171,6 +171,15 @@ https://www.webpackjs.com/loaders/sass-loader/
 `npm install sass-loader node-sass  --save-dev`
 
 
+# 打包html
+
+https://www.webpackjs.com/plugins/html-webpack-plugin/
+
+`npm install --save-dev html-webpack-plugin`
+
+
+
+
 
 
 
