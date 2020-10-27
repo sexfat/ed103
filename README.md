@@ -199,10 +199,20 @@ https://www.npmjs.com/package/clean-webpack-plugin
 # dev server
 https://webpack.js.org/configuration/dev-server/
 
- -  安裝 `npm i webpack-dev-server --save-dev`
+ -  全域安裝 `npm i webpack-dev-server -g`
+ -  專案安裝 `npm i webpack-dev-server --save-dev`
 
 
 指令 ： webpack-dev-server --open
+
+```json
+ "scripts": {
+    "server": "webpack-dev-server --open",
+    "dev": "webpack -d",
+    "prod": "webpack -p",
+    "plugins_install": "npm i"
+  },
+```
 
 
 
