@@ -1,6 +1,6 @@
 import $ from "jquery";
 import TweenMax from "gsap"; 
-import './style.scss';
+import './sass/style.scss';
 // import "./style.css"
 
 
