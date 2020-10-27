@@ -34,6 +34,7 @@ module.exports = {
           filename : 'style.css' 
        }),
        new HtmlWebpackPlugin({
+        inject: 'head',// 選擇html script 放置的位址
         chunks: ['app'], // 選擇資源載入
         filename: 'index.html', //產生的首頁 index.html
         template: './src/index.html' //我們參考的首頁
