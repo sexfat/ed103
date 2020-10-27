@@ -177,6 +177,21 @@ https://www.webpackjs.com/plugins/html-webpack-plugin/
 
 `npm install --save-dev html-webpack-plugin`
 
+# 全域加載 jquery
+
+https://www.webpackjs.com/plugins/provide-plugin/
+
+```jsx=
+const webpack = require('webpack');
+
+//放置在plugins裡
+new webpack.ProvidePlugin({
+  $: 'jquery',
+  jQuery: 'jquery'
+})
+```
+
+
 
 
 
