@@ -1,0 +1,15 @@
+nav {
+  width: 100%; }
+
+body {
+  background-color: #ff5e00; }
+  body .box {
+    width: 150px;
+    height: 120px;
+    background-color: #7e0101;
+    position: relative;
+    top: 10px; }
+  body #app {
+    margin-top: 20px;
+    font-size: 30px; }
+
