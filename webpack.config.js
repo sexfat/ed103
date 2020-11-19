@@ -8,7 +8,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
     mode: 'development',//production
     entry: {
-        app:  './src/index.js'
+        app:  './src/index2.js'
     }, //兩個進入點
     output: {
         path: path.resolve(__dirname, 'dist'), //產出資料夾
